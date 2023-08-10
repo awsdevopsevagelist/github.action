@@ -9,7 +9,7 @@ jobs:
   firstjob:
     runs-on: ubuntu-latest
     steps:
-      - name: Salutation
+      - name: betrand
         run: echo "Hi guys, we are learning GitHub Actions"
       - name: Install Apache
         run: sudo apt-get install apache2 -y
