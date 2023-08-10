@@ -1,18 +1,21 @@
 name: firstworkflow
 
-on: push
+on:
+  issues:
+    types:
+      - opened
 
 jobs:
   firstjob:
     runs-on: ubuntu-latest
     steps:
-      - name: salutation
-        run: echo "hi guys we are learning github actions"
-      - name: install apache
+      - name: Salutation
+        run: echo "Hi guys, we are learning GitHub Actions"
+      - name: Install Apache
         run: sudo apt-get install apache2 -y
 
   secondjob:
     runs-on: ubuntu-latest
     steps:
-      - name: install java
+      - name: Install Java
         run: sudo apt-get install openjdk-11-jdk -y
