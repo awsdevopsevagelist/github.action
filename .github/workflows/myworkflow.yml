@@ -1,0 +1,19 @@
+name: firstworkflow
+
+on:
+  workflow_dispatch
+
+jobs:
+  firstjob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: salutation
+        run: echo "hi guys we are learning github actions"
+      - name: install apache
+        run: sudo apt-get install apache2 -y
+
+  secondjob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: install java
+        run: sudo apt-get install openjdk-11-jdk -y
