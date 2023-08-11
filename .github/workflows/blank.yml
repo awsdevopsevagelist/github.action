@@ -1,0 +1,5 @@
+jobs:
+  my_job:
+    runs-on: self-hosted
+    steps:
+      # Steps for your job
