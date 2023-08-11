@@ -3,18 +3,18 @@ name: firstworkflow
 on:
   issues:
     types:
-      - opened
+      - closed
 
 jobs:
-  firstjob:
+  first_job:
     runs-on: ubuntu-latest
     steps:
-      - name: betrand
+      - name: bertrand
         run: echo "Hi guys, we are learning GitHub Actions"
       - name: Install Apache
         run: sudo apt-get install apache2 -y
 
-  secondjob:
+  second_job:
     runs-on: ubuntu-latest
     steps:
       - name: Install Java
