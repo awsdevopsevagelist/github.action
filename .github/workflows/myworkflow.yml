@@ -6,7 +6,7 @@ jobs:
   first_job:
     runs-on: ubuntu-latest
     steps:
-      - name: bertrand
+      - name: mutagha
         run: echo "Hi guys, we are learning GitHub Actions"
       - name: Install Apache
         run: sudo apt-get install apache2 -y
