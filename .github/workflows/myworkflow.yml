@@ -1,9 +1,6 @@
 name: firstworkflow
 
-on:
-  issues:
-    types:
-      - closed
+on: push
 
 jobs:
   first_job:
